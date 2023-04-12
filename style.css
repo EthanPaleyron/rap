@@ -224,15 +224,23 @@ form {
 
 .position_input {
   margin: 3em 0;
+  width: 100%;
   display: flex;
-  flex-flow: wrap;
   justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 1em;
 }
 
 .section_input {
   position: relative;
+}
+
+.section_input:nth-child(1), .section_input:nth-child(2)  {
+  width: 49%;
+}
+
+.section_input:nth-child(3) {
+  width: 100%;
 }
 
 input {
@@ -241,6 +249,7 @@ input {
   border: solid 1.5px var(--grey);
   border-radius: 50px;
   padding: 1.5em 5em;
+  width: 100%;
 }
 
 .img_input {
